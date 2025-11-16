@@ -53,6 +53,20 @@ The JavaFX version is a **multi-user photo management system** featuring user ac
   1. Log in as `admin` to create users  (username and password are `admin`)
   2. Log in as `stock` for pre-loaded photo albums
   3. Log in as any user to manage albums/photos (create new users through admin)
+ 
+### Launch Instructions (Desktop)
+
+Update your JavaFX module paths in `.vscode/launch.json` and `.vscode/settings.json`:
+
+```
+"--module-path", "/path/to/javafx-sdk-21/lib",
+```
+```
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/path/to/javafx-sdk-24/lib/**/*.jar"
+    ]
+```
 
 ---
 
@@ -95,21 +109,3 @@ Together, these two versions demonstrate:
 - Serialization-based data persistence  
 - Search algorithms for metadata-driven queries  
 - Experience adapting desktop logic into mobile-native components  
-
----
-
-# 🔧 Launch Instructions (Desktop)
-
-Update your JavaFX module path in `.vscode/launch.json`:
-
-```
-"--module-path", "/path/to/javafx-sdk-21/lib",
-```
-
-Example:
-
-```
-"--module-path", "/Users/yourname/javafx-sdk-21.0.1/lib",
-```
-
----
