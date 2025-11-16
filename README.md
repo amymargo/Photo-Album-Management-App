@@ -16,7 +16,7 @@ The desktop version is the original implementation; the mobile version is a plat
 ## Overview
 The JavaFX version is a **multi-user photo management system** featuring user accounts, admin tools, album organization, captioning, tagging, searching, and persistent storage via Java serialization. All UI screens are created using **FXML**.
 
-### Features Implemented (Desktop)
+### Features Implemented
 #### **Admin User**
 - List users  
 - Create new users  
@@ -46,7 +46,7 @@ The JavaFX version is a **multi-user photo management system** featuring user ac
 - `data/` – Stock photos folder  
 - `docs/` – Javadoc HTML 
 
-### Notes (Desktop)
+### Notes
 - Requires **Java 21** and **JavaFX 21**  
 - All user data is serialized per-user  
 - To test:
@@ -54,7 +54,7 @@ The JavaFX version is a **multi-user photo management system** featuring user ac
   2. Log in as `stock` for pre-loaded photo albums
   3. Log in as any user to manage albums/photos (create new users through admin)
  
-### Launch Instructions (Desktop)
+### Launch Instructions
 
 Update your JavaFX module paths in `.vscode/launch.json` and `.vscode/settings.json`:
 
@@ -76,7 +76,7 @@ Update your JavaFX module paths in `.vscode/launch.json` and `.vscode/settings.j
 The mobile version is a **single-user Android port** of the desktop application, rebuilt using Android Studio and XML layouts.  
 Because a personal smartphone naturally has one user, this version removes accounts and admin functionality while preserving album and photo features.
 
-### Features Implemented (Android)
+### Features Implemented
 - Create, rename, delete, and open albums  
 - View photo thumbnails within albums  
 - Add or remove photos using the device’s file picker  
@@ -89,15 +89,27 @@ Because a personal smartphone naturally has one user, this version removes accou
   - AND combinations  
   - OR combinations  
 
-### Notes (Android)
+### Notes
 - Built with Android Studio  
 - Uses XML UI layout files instead of FXML  
 - Data is saved locally on-device  
-- Search experience includes **auto-completion**, improving usability on mobile  
+- Search experience includes **auto-completion**, improving usability on mobile
+
+## Launch Instructions
+
+1. **Open Android Studio**
+2. Select **"Open"** and choose the `Android_Mobile_Version/` folder from this repository.
+3. Let Android Studio **sync Gradle** (this may take a moment).
+4. In the toolbar, choose a device:
+   - A real Android phone (with USB debugging enabled), **or**
+   - An emulator such as **Pixel 6 – API 34**
+5. Click **Run ▶** to build and launch the app.
+
+No additional configuration is required — all Gradle settings and resources are included.
 
 ---
 
-# 🚀 Summary
+# Summary
 
 - The **JavaFX Desktop Version** is the full, multi-user implementation with admin controls, date-range search, user-defined tag types, and complete JavaFX UI.  
 - The **Android Mobile Version** is a ported, single-user version optimized for mobile interaction, with streamlined features and auto-complete enhanced search.
