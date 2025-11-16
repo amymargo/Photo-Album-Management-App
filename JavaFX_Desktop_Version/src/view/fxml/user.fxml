@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controller.UserController">
+   <children>
+      <TableView fx:id="albumTableView" layoutX="15.0" layoutY="54.0" prefHeight="219.0" prefWidth="570.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="190.0" text="Album Name" />
+          <TableColumn fx:id="countColumn" prefWidth="190.0" text="Number of Photos" />
+            <TableColumn fx:id="rangeColumn" prefWidth="190.0" text="Date Range" />
+        </columns>
+      </TableView>
+      <Label fx:id="welcomeLabel" alignment="CENTER" layoutX="115.0" layoutY="14.0" prefHeight="30.0" prefWidth="370.0" text="Welcome, [username]!" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="logoutButton" alignment="CENTER" layoutX="513.0" layoutY="14.0" mnemonicParsing="false" onAction="#logout" prefHeight="30.0" prefWidth="72.0" text="Log out" />
+      <Button fx:id="openAlbumButton" alignment="CENTER" layoutX="14.0" layoutY="294.0" mnemonicParsing="false" onAction="#openAlbum" prefHeight="40.0" prefWidth="150.0" text="Open" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="createAlbumButton" layoutX="204.0" layoutY="346.0" mnemonicParsing="false" onAction="#createAlbum" prefHeight="40.0" prefWidth="180.0" text="Create">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteAlbumButton" alignment="CENTER" layoutX="14.0" layoutY="346.0" mnemonicParsing="false" onAction="#deleteAlbum" prefHeight="40.0" prefWidth="150.0" text="Delete" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="renameAlbumButton" layoutX="405.0" layoutY="346.0" mnemonicParsing="false" onAction="#renameAlbum" prefHeight="40.0" prefWidth="180.0" text="Rename">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="albumNameField" layoutX="204.0" layoutY="294.0" prefHeight="40.0" prefWidth="380.0" promptText="New album name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="searchButton" alignment="CENTER" layoutX="15.0" layoutY="14.0" mnemonicParsing="false" onAction="#searchPhotos" prefHeight="30.0" prefWidth="34.0" text="🔍" />
+   </children>
+</AnchorPane>

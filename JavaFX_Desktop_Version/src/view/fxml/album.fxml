@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controller.AlbumController">
+   <children>
+      <Label fx:id="albumNameLabel" alignment="CENTER" layoutX="83.0" layoutY="3.0" prefHeight="23.0" prefWidth="434.0" text="Album: [Album name]" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="photoListView" layoutX="20.0" layoutY="36.0" prefHeight="322.0" prefWidth="270.0" />
+      <ImageView fx:id="photoImageView" fitHeight="165.0" fitWidth="270.0" layoutX="316.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../data/stock/stockphoto5.jpeg" />
+         </image>
+      </ImageView>
+      <Label fx:id="captionLabel" alignment="TOP_LEFT" layoutX="317.0" layoutY="232.0" prefHeight="47.0" prefWidth="270.0" text="Caption:" wrapText="true">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="captionButton" layoutX="339.0" layoutY="206.0" mnemonicParsing="false" onAction="#editCaption" prefHeight="20.0" prefWidth="75.0" text="Edit Caption">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Label fx:id="tagsLabel" alignment="TOP_LEFT" layoutX="317.0" layoutY="308.0" prefHeight="47.0" prefWidth="270.0" text="Tags:" wrapText="true" />
+      <Button fx:id="addTagButton" layoutX="414.0" layoutY="206.0" mnemonicParsing="false" onAction="#addTag" prefHeight="20.0" prefWidth="75.0" text="Add Tag">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="removeTagButton" layoutX="489.0" layoutY="206.0" mnemonicParsing="false" onAction="#deleteTag" prefHeight="20.0" prefWidth="75.0" text="Delete Tag">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="addPhotoButton" layoutX="74.0" layoutY="367.0" mnemonicParsing="false" onAction="#addPhoto" prefHeight="20.0" prefWidth="97.0" text="Add Photo" />
+      <Button fx:id="deletePhotoButton" layoutX="198.0" layoutY="367.0" mnemonicParsing="false" onAction="#deletePhoto" prefHeight="20.0" prefWidth="97.0" text="Delete Photo" />
+      <Button fx:id="backButton" layoutX="20.0" layoutY="2.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+      <Button fx:id="previousPhotoButton" layoutX="311.0" layoutY="206.0" mnemonicParsing="false" onAction="#navigateLeft" prefHeight="20.0" prefWidth="28.0" text="&lt;">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="nextPhotoButton" layoutX="564.0" layoutY="206.0" mnemonicParsing="false" onAction="#navigateRight" prefHeight="20.0" prefWidth="28.0" text="&gt;">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Label fx:id="dateLabel" alignment="TOP_LEFT" layoutX="317.0" layoutY="285.0" prefHeight="17.0" prefWidth="270.0" text="Date: " />
+      <Button fx:id="movePhotoButton" layoutX="327.0" layoutY="367.0" mnemonicParsing="false" onAction="#movePhoto" prefHeight="20.0" prefWidth="97.0" text="Move Photo" />
+      <Button fx:id="copyPhotoButton" layoutX="452.0" layoutY="367.0" mnemonicParsing="false" onAction="#copyPhoto" prefHeight="20.0" prefWidth="97.0" text="Copy Photo" />
+      <Button fx:id="createAlbumFromSearchButton" layoutX="495.0" layoutY="2.0" mnemonicParsing="false" onAction="#createAlbumFromSearch" text="Create Album" />
+   </children>
+</AnchorPane>

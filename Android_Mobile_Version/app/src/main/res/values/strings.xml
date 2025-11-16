@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Photo Album Manager</string>
+    <string-array name="tag_types">
+        <item>person</item>
+        <item>location</item>
+    </string-array>
+</resources>

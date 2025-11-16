@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controller.AdminController">
+   <children>
+      <Label alignment="CENTER" layoutX="227.0" layoutY="14.0" prefHeight="26.0" prefWidth="147.0" text="Admin Panel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="userListView" layoutX="14.0" layoutY="83.0" prefHeight="300.0" prefWidth="350.0" />
+      <Label layoutX="21.0" layoutY="49.0" prefHeight="26.0" prefWidth="110.0" text="List of users:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userTextField" layoutX="374.0" layoutY="123.0" prefHeight="50.0" prefWidth="216.0" promptText="Username">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="createUserButton" layoutX="374.0" layoutY="196.0" mnemonicParsing="false" onAction="#handleCreateUser" prefHeight="75.0" prefWidth="100.0" text="Create" />
+      <Button fx:id="deleteUserButton" layoutX="490.0" layoutY="196.0" mnemonicParsing="false" onAction="#handleDeleteUser" prefHeight="75.0" prefWidth="100.0" text="Delete" />
+      <Button fx:id="logoutButton" layoutX="374.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleLogout" prefHeight="50.0" prefWidth="216.0" text="Logout" />
+      <Label fx:id="statusLabel" alignment="CENTER" layoutX="374.0" layoutY="94.0" prefHeight="23.0" prefWidth="216.0">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
