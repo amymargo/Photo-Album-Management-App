@@ -1,9 +1,9 @@
-# Photo Gallery Management App  
+# Photo Gallery App  
 ### Developed by: Amy Margolina and Toma Takamatsu
 
 This repository contains **two complete versions** of a photo album management application:
 
-1. **JavaFX Desktop Version** – the full multi-user photo management system built for Java 21 and JavaFX 21
+1. **JavaFX Desktop Version** – the full multi-user photo management system built with Java 21, JavaFX 21, and FXML
 2. **Android Mobile Version** – a streamlined, touch-friendly port built with Android Studio, designed for single-user devices
 
 Both versions allow users to organize photos into albums, tag photos, and search for images based on descriptive metadata.  
