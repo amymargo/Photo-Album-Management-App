@@ -1,0 +1,7 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/path/to/javafx-sdk-24/lib/**/*.jar"
+    ]
+}
