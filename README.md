@@ -109,6 +109,44 @@ No additional configuration is required — all Gradle settings and resources ar
 
 ---
 
+# UI Preview Gallery
+
+## 🖥 JavaFX Desktop Version
+
+### **Home**
+<p align="center">
+  <img src="screenshots/fx-home.png" width="350"/>
+</p>
+
+### **Album View**
+<p align="center">
+  <img src="screenshots/fx-album.png" width="350"/>
+  <img src="screenshots/fx-move.png" width="350"/>
+</p>
+
+---
+
+## 📱 Android Mobile Version
+
+### **Home & Album View**
+<p align="center">
+  <img src="screenshots/android-home.png" width="300"/>
+  <img src="screenshots/android-album.png" width="300"/>
+</p>
+
+### **Photo View**
+<p align="center">
+  <img src="screenshots/android-pic.png" width="300"/>
+</p>
+
+### **Search**
+<p align="center">
+  <img src="screenshots/android-search.png" width="300"/>
+  <img src="screenshots/android-results.png" width="300"/>
+</p>
+
+---
+
 # Summary
 
 - The **JavaFX Desktop Version** is the full, multi-user implementation with admin controls, date-range search, user-defined tag types, and complete JavaFX UI.  
